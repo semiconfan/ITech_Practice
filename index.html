@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First laboratory work</title>
+</head>
+<body>
+    <h1>Перша лабораторна робота. Варіант №3.</h1>
+    <br>
+    <h3>Оформлений текст:</h3>
+        <p> 
+            <span>
+                <b><i>E=mc<sup>2</sup></i></b>, 
+                where <b>E</b> - energy of the object,<br> 
+                <b>m</b> - it's mass, <b>c</b> - speed of light in <br>
+                vacuum, equals to 299 792 458 <i>m/s</i>
+            </span>
+        </p>
+        <br>
+    <h3>Випадаючий список студентів групи:</h3>
+        <br>
+        <select>
+            <option>1.  Бартновський Микита Дмитрович</option>
+            <option>2.  Блажиєвський Віталій Сергійович</option>
+            <option>3.  Буканов Ілля В`Ячеславович</option>
+            <option>4.  Букрєєва Олександра Сергіївна</option>
+            <option>5.  Буценко Данило Олександрович</option>
+            <option>6.  Данилов Ілля Миколайович</option>
+            <option>7.  Дімітров Микола Миколайович</option>
+            <option>8.  Іваницький Руслан Олексійович</option>
+            <option>9.  Максименко Єгор Русланович</option>
+            <option>10. Ольховик Денис Володимирович</option>
+            <option>11. Полупан Олександр Романович</option>
+            <option>12. Прокидянчик Даніїл Дмитрович</option>
+            <option>13. Сичов Олександр Дмитрович</option>
+            <option>14. Томащук Іван Ігорович</option>
+            <option>15. Хижняк Данило Євгенович</option>
+            <option>16. Цехмістро Данило Дмитрович</option>
+            <option>17. Шевченко Дмитро Олександрович</option>
+            <option>18. Шиленко Михайло Павлович</option>
+            <option>19. Щербак Аліна Сергіївна</option>
+            <option>20. Щолкін Михайло Миколайович</option>
+            <option>21. Янакаєв Айдар Анверович</option>
+        </select>
+        <br>
+        <br>
+        <h3>Таблиця з даними змісту книги</h3>
+        <table border="2">
+            <caption>
+                Зміст книги "Моделювання систем" за авт. В. М. Томашевського
+            </caption>
+            <thead>
+                <tr>
+                    <th>Назва розділу</th>
+                    <th align="center">Сторінка</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Розділ 1. Загальні положення та визначення</td>
+                    <td align="center">15</td>
+                </tr>
+                <tr>
+                    <td>Розділ 2. Моделі систем масового обслуговування</td>
+                    <td align="center">46</td>
+                </tr>
+                <tr>
+                    <td>Розділ 3. Мережі Петрі</td>
+                    <td align="center">88</td>
+                </tr>
+                <tr>
+                    <td>Розділ 4. Імовірнвсне моделювання</td>
+                    <td align="center">112</td>
+                </tr>
+                <tr>
+                    <td>Розділ 5. Імітаційне моделювання</td>
+                    <td align="center">160</td>
+                </tr>
+                <tr>
+                    <td>Розділ 6. Програмне забезпечення імітаційного моделювання</td>
+                    <td align="center">208</td>
+                </tr>
+                <tr>
+                    <td>Розділ 7. Планування та проведення експериментів з моделями</td>
+                    <td align="center">248</td>
+                </tr>
+                <tr>
+                    <td>Розділ 8. Прийняття рішень за результатами моделювання</td>
+                    <td align="center">296</td>
+                </tr>
+                <tr>
+                    <td>Розділ 9. Імітаційне моделювання виробничих та комп'ютерних систем</td>
+                    <td align="center">322</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <h3> Форма для введення інформації про студента.</h3>
+        <br>
+        <form method="post" autocomplete="off" action="#">
+            <label for ="first_name">Ім'я студента:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <label for="last_name">Прізвище студента:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+
+            <label for="group">Група:</label>
+            <input type="text" id="group" name="group" required><br><br>
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" required><br><br>
+
+            <label for="dob">Дата народження:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="Document_No">Документ №</label>
+            <input type="password" id="Document_No" name="Document_No" required><br><br>
+
+            <label for="IsOnScholarship">Студент(-ка) отримує стипендію?</label>
+            <select id="IsOnScholarship" name="IsOnScholarship" required>
+                <option value="">Оберіть варіант</option>
+                <option value="Yes">Так</option>
+                <option value="No">Ні</option>
+            </select> <br><br>
+
+            <label for="RNTRC">РНОКПП:</label>
+            <input type="number" id="RNTRC" name="RNTRC"><br><br>
+
+            <label for="note">Примітка:</label>
+            <input type="text" id="note" name="note"><br><br>
+
+            <input type="submit" value="Зберегти">
+        </form>
+</body>
+</html>
